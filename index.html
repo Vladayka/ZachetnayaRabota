@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Spa - Массажный салон премиум класса</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Royal<span>Spa</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#team">Мастера</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Премиальный спа-уход<br>для вашего тела</h1>
+                <p class="hero-subtitle">Погрузитесь в мир релаксации и восстановления</p>
+                <a href="#services" class="cta-button">Наши услуги</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+     <!-- About Section -->
+     <section id="about" class="about">
+        <div class="container">
+            <div class="section-heading">
+                <h2>О нашем спа-центре</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>15 лет опыта в индустрии красоты</h3>
+                    <p>Наш спа-центр сочетает вековые традиции массажа с современными wellness-технологиями. Мы используем только 100% натуральные масла и авторские методики релаксации.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Лицензированные специалисты</li>
+                        <li><i class="fas fa-check"></i> Гипоаллергенные материалы</li>
+                        <li><i class="fas fa-check"></i> Индивидуальный подход</li>
+                    </ul>
+                    <a href="#contact" class="about-button">Записаться</a>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-spa"></i>
+                        <h4>Ароматерапия</h4>
+                        <p>Эфирные масла премиум-класса</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-heart"></i>
+                        <h4>Забота о вас</h4>
+                        <p>Персонализированные программы</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Сертификаты</h4>
+                        <p>Международная аккредитация</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Ежедневно</h4>
+                        <p>Работаем с 9:00 до 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Наши услуги</h2>
+                <div class="divider"></div>
+                <p class="section-description">Более 12 уникальных спа-процедур для вашего комфорта</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Процедура 1 -->
+                <div class="service-card">
+                    <img src="images/image1.webp" alt="Классический массаж">
+                    <div class="service-content">
+                        <h3>Классический массаж</h3>
+                        <div class="service-details">
+                            <p>Расслабляющий массаж всего тела с использованием техник шведского массажа</p>
+                            <div class="service-meta">
+                                <span class="price">3500₽/час</span>
+                                <button class="book-service" data-service="Классический массаж">Запись</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Процедура 2 -->
+                <div class="service-card">
+                    <img src="images/image2.webp" alt="Хот-стоун терапия">
+                    <div class="service-content">
+                        <h3>Хот-стоун терапия</h3>
+                        <div class="service-details">
+                            <p>Массаж нагретыми вулканическими камнями для глубокой релаксации</p>
+                            <div class="service-meta">
+                                <span class="price">5500₽/сеанс</span>
+                                <button class="book-service" data-service="Хот-стоун терапия">Запись</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Добавьте остальные 10 процедур по аналогии -->
+                <!-- Процедура 3 -->
+                <div class="service-card">
+                    <img src="images/image3.jpeg" alt="Ароматерапия">
+                    <div class="service-content">
+                        <h3>Ароматерапия</h3>
+                        <div class="service-details">
+                            <p>Сочетание массажных техник с эфирными маслами премиум-класса</p>
+                            <div class="service-meta">
+                                <span class="price">4500₽/сеанс</span>
+                                <button class="book-service" data-service="Ароматерапия">Запись</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Процедура 4 -->
+                <div class="service-card">
+                    <img src="images/image4.webp" alt="Спортивный массаж">
+                    <div class="service-content">
+                        <h3>Спортивный массаж</h3>
+                        <div class="service-details">
+                            <p>Интенсивная проработка мышц для спортсменов и активных людей</p>
+                            <div class="service-meta">
+                                <span class="price">4000₽/час</span>
+                                <button class="book-service" data-service="Спортивный массаж">Запись</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Остальные карточки можно добавить аналогично -->
+            </div>
+        </div>
+    </section>
+
+        <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Наши специалисты</h2>
+                <div class="divider"></div>
+                <p class="section-description">Профессионалы с медицинским образованием и международной сертификацией</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Мастер 1 -->
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="images/image5.jpg" alt="Мария Иванова">
+                        <div class="team-overlay">
+                            <div class="experience">12 лет опыта</div>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Мария Иванова</h3>
+                        <p>Главный массажист</p>
+                        <div class="specialization">
+                            <span>Спортивный массаж</span>
+                            <span>Миофасциальный релиз</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Мастер 2 -->
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="images/image6.webp" alt="Алексей Петров">
+                        <div class="team-overlay">
+                            <div class="experience">8 лет опыта</div>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#"><i class="fab fa-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Алексей Петров</h3>
+                        <p>Физиотерапевт</p>
+                        <div class="specialization">
+                            <span>Посттравматическая реабилитация</span>
+                            <span>Кинезиотейпирование</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Добавьте еще 4-10 специалистов по аналогии -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Отзывы клиентов</h2>
+                <div class="divider"></div>
+                <p class="section-description">Что говорят наши посетители</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Отзыв 1 -->
+                <div class="testimonial-card">
+                    <div class="client-info">
+                        <img src="images/image7.jpg" alt="Клиент" class="client-photo">
+                        <div class="client-details">
+                            <h4>Анна Смирнова</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="date">15.05.2024</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Это лучший спа-салон в городе! Профессиональные массажисты, уютная атмосфера и индивидуальный подход. Обязательно вернусь снова!</p>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="testimonial-card">
+                    <div class="client-info">
+                        <img src="images/image8.jpg" alt="Клиент" class="client-photo">
+                        <div class="client-details">
+                            <h4>Максим Иванов</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="date">10.05.2024</span>
+                        </div>
+                    </div>
+                    <p class="review-text">После спортивной травмы обратился за реабилитацией. Буквально за 3 сеанса почувствовал значительное улучшение. Спасибо Алексею за профессионализм!</p>
+                </div>
+
+                <!-- Добавьте еще 4-6 отзывов -->
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Контакты</h2>
+                <div class="divider"></div>
+                <p class="section-description">Мы всегда рады вашему визиту</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>г. Москва, ул. Тверская, д. 18</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@royalspa.ru</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Часы работы</h4>
+                            <p>Пн-Вс: 10:00 - 22:00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1b8d7a8c0e5b7c3a7d3a2c6b9e0d3c4a&amp;source=constructor" 
+                        width="100%" 
+                        height="400" 
+                        frameborder="0"
+                        loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h5>Royal Spa</h5>
+                    <p>Премиальный спа-салон с 2010 года</p>
+                    <p>Лицензия № ЛО-77-01-012345</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Меню</h5>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#team">Команда</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Контакты</h5>
+                    <ul>
+                        <li>+7 (495) 123-45-67</li>
+                        <li>info@royalspa.ru</li>
+                        <li>Москва, Тверская 18</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 Royal Spa. Все права защищены</p>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Form -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Запись на сеанс</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Услуга:</label>
+                    <select id="service" required>
+                        <option value="">Выберите услугу</option>
+                        <option>Классический массаж</option>
+                        <option>Спортивный массаж</option>
+                        <option>Ароматерапия</option>
+                        <option>Хот-стоун терапия</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата и время:</label>
+                    <input type="datetime-local" id="date" required>
+                </div>
+                <button type="submit" class="submit-btn">Отправить запрос</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
